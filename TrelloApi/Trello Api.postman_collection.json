@@ -1,0 +1,156 @@
+{
+	"id": "3fd0eb6d-e5bf-d2a8-9021-6e95a3b4584f",
+	"name": "Trello Api",
+	"description": "",
+	"order": [
+		"7d7fa09e-e06e-cf55-5430-9bc203965f84",
+		"e514dd02-08ab-ea8e-eb62-1d42cec7f22f",
+		"af200e01-0fc1-8328-98a3-347b5e4e0b85"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1505247714304,
+	"owner": "1344997",
+	"public": false,
+	"requests": [
+		{
+			"id": "7d7fa09e-e06e-cf55-5430-9bc203965f84",
+			"headers": "",
+			"headerData": [],
+			"url": "https://api.trello.com/1/members/me?key=cb602089b6ec086870c1e9768694791f&token=1701f800a7161f7943e15b8fe65d6e2d63e8c96252dfeefd4d6e9894e3b86870",
+			"queryParams": [
+				{
+					"key": "key",
+					"value": "cb602089b6ec086870c1e9768694791f",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "1701f800a7161f7943e15b8fe65d6e2d63e8c96252dfeefd4d6e9894e3b86870",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "3fd0eb6d-e5bf-d2a8-9021-6e95a3b4584f",
+			"data": [
+				{
+					"key": "integration_key",
+					"value": "YOUR_INTEGRATION_KEY",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "hash",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "merchant_refund_code",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Get member info",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1505247723837,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "af200e01-0fc1-8328-98a3-347b5e4e0b85",
+			"headers": "",
+			"headerData": [],
+			"url": "https://api.trello.com/1/cards/599d971de40e220e7f94ba84/actions?key=cb602089b6ec086870c1e9768694791f&token=1701f800a7161f7943e15b8fe65d6e2d63e8c96252dfeefd4d6e9894e3b86870",
+			"queryParams": [
+				{
+					"key": "key",
+					"value": "cb602089b6ec086870c1e9768694791f",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "1701f800a7161f7943e15b8fe65d6e2d63e8c96252dfeefd4d6e9894e3b86870",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "3fd0eb6d-e5bf-d2a8-9021-6e95a3b4584f",
+			"data": null,
+			"dataMode": "params",
+			"name": "Actions List",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1505503802837,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "e514dd02-08ab-ea8e-eb62-1d42cec7f22f",
+			"headers": "",
+			"headerData": [],
+			"url": "https://api.trello.com/1/boards/59817a33f90fd16ab39f484b/cards?key=cb602089b6ec086870c1e9768694791f&token=1701f800a7161f7943e15b8fe65d6e2d63e8c96252dfeefd4d6e9894e3b86870",
+			"queryParams": [
+				{
+					"key": "key",
+					"value": "cb602089b6ec086870c1e9768694791f",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "1701f800a7161f7943e15b8fe65d6e2d63e8c96252dfeefd4d6e9894e3b86870",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "3fd0eb6d-e5bf-d2a8-9021-6e95a3b4584f",
+			"data": null,
+			"dataMode": "params",
+			"name": "https://api.trello.com/1/boards/59817a33f90fd16ab39f484b/cards?key=cb602089b6ec086870c1e9768694791f&token=1701f800a7161f7943e15b8fe65d6e2d63e8c96252dfeefd4d6e9894e3b86870",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1505249350424,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

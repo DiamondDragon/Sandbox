@@ -1,0 +1,52 @@
+{
+	"id": "3326c1b2-0da4-0ac1-daea-c8b1238b86fd",
+	"name": "Splunk HTTP Event Collector",
+	"description": "",
+	"order": [
+		"167c0de1-81a7-25db-afda-8fe80bafc93f"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1505593842388,
+	"owner": "1344997",
+	"public": false,
+	"requests": [
+		{
+			"id": "167c0de1-81a7-25db-afda-8fe80bafc93f",
+			"headers": "Authorization: Splunk FE647669-6532-4234-9B40-9381634531D5\nContent-Type: application/javascript\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Splunk FE647669-6532-4234-9B40-9381634531D5",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/javascript",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8088/services/collector",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "3326c1b2-0da4-0ac1-daea-c8b1238b86fd",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Send data to HTTP Event Collector",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1505593843872,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\"time\":1505575660 ,\"host\":\"Golang\",\"source\":\"readme.md\",\"event\":{ \"id\" : \"111\", \"firstName\" : \"Andrei\", \"lastName\" : \"Salanoi\", \"details\" : { \"age\": 23, \"weigh\" : 100 } }}"
+		}
+	]
+}
