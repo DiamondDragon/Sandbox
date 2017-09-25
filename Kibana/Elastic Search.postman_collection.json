@@ -1,0 +1,188 @@
+{
+	"id": "79ee6649-3414-3a08-dd40-5d85cdaea01c",
+	"name": "Elastic Search",
+	"description": "",
+	"order": [
+		"95d7b5b6-d16d-c317-74af-3c4dacb23737",
+		"6b68f49c-713c-f8f7-0d64-c2ba8805e686",
+		"17bf2ee4-fe50-2402-9cb4-50bb424b5ba5",
+		"01174bf3-0e17-7fab-11f5-654a83e0acaf"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1506368338316,
+	"owner": "1344997",
+	"public": false,
+	"requests": [
+		{
+			"id": "01174bf3-0e17-7fab-11f5-654a83e0acaf",
+			"headers": "Authorization: Splunk FE647669-6532-4234-9B40-9381634531D5\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Splunk FE647669-6532-4234-9B40-9381634531D5",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9200/blog/post/1?pretty",
+			"queryParams": [
+				{
+					"key": "pretty",
+					"value": "",
+					"equals": false,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "79ee6649-3414-3a08-dd40-5d85cdaea01c",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Get document by id",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1506368510773,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n  \"title\": \"Веселые котята\",\r\n  \"content\": \"<p>Смешная история про котят<p>\",\r\n  \"tags\": [\r\n    \"котята\",\r\n    \"смешная история\"\r\n  ],\r\n  \"published_at\": \"2014-09-12T20:44:42+00:00\"\r\n}"
+		},
+		{
+			"id": "17bf2ee4-fe50-2402-9cb4-50bb424b5ba5",
+			"headers": "Authorization: Splunk FE647669-6532-4234-9B40-9381634531D5\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Splunk FE647669-6532-4234-9B40-9381634531D5",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9200/blog/_mapping?pretty",
+			"queryParams": [
+				{
+					"key": "pretty",
+					"value": "",
+					"equals": false,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "79ee6649-3414-3a08-dd40-5d85cdaea01c",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Get mapping info",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1506368445908,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n  \"title\": \"Веселые котята\",\r\n  \"content\": \"<p>Смешная история про котят<p>\",\r\n  \"tags\": [\r\n    \"котята\",\r\n    \"смешная история\"\r\n  ],\r\n  \"published_at\": \"2014-09-12T20:44:42+00:00\"\r\n}"
+		},
+		{
+			"id": "6b68f49c-713c-f8f7-0d64-c2ba8805e686",
+			"headers": "Authorization: Splunk FE647669-6532-4234-9B40-9381634531D5\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Splunk FE647669-6532-4234-9B40-9381634531D5",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9200/",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1506368425828,
+			"name": "Version",
+			"description": "",
+			"collectionId": "79ee6649-3414-3a08-dd40-5d85cdaea01c",
+			"responses": [],
+			"rawModeData": "{\r\n  \"title\": \"Веселые котята\",\r\n  \"content\": \"<p>Смешная история про котят<p>\",\r\n  \"tags\": [\r\n    \"котята\",\r\n    \"смешная история\"\r\n  ],\r\n  \"published_at\": \"2014-09-12T20:44:42+00:00\"\r\n}"
+		},
+		{
+			"id": "95d7b5b6-d16d-c317-74af-3c4dacb23737",
+			"headers": "Authorization: Splunk FE647669-6532-4234-9B40-9381634531D5\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Splunk FE647669-6532-4234-9B40-9381634531D5",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9200/blog/post/1?pretty",
+			"queryParams": [
+				{
+					"key": "pretty",
+					"value": "",
+					"equals": false,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "79ee6649-3414-3a08-dd40-5d85cdaea01c",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Index Data",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1506368359192,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n  \"title\": \"Веселые котята\",\r\n  \"content\": \"<p>Смешная история про котят<p>\",\r\n  \"tags\": [\r\n    \"котята\",\r\n    \"смешная история\"\r\n  ],\r\n  \"published_at\": \"2014-09-12T20:44:42+00:00\"\r\n}"
+		}
+	]
+}
