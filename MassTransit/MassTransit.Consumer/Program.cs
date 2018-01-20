@@ -1,19 +1,14 @@
 ﻿using System;
-using Automatonymous;
 using MassTransit.Messages;
-using MassTransit.Saga;
 
-namespace MassTransit.Publisher
+//using MassTransit.Messages;
+
+namespace MassTransit.Consumer
 {
-
     class Program
     {
         static void Main(string[] args)
         {
-
-            var repository = new InMemorySagaRepository<AnalysisStateMachineInstance>();
-            var machine = new AnalysisStateMachine();
-
             var bus = Bus.Factory.CreateUsingRabbitMq(sbc =>
             {
                 var host = sbc.Host(new Uri("rabbitmq://localhost"), h =>
@@ -22,17 +17,16 @@ namespace MassTransit.Publisher
                     h.Password("guest");
                 });
 
-                sbc.ReceiveEndpoint(host, "analysis_state", e =>
+                sbc.ReceiveEndpoint(host, "test_queue", ep =>
                 {
-                    e.PrefetchCount = 8;
-                    e.StateMachineSaga(machine, repository);
-                }); ;
-
+                    ep.Handler<YourMessage>(context =>
+                    {
+                        return Console.Out.WriteLineAsync($"Received: {context.Message.Text}");
+                    });
+                });
             });
 
             bus.Start();
-
-            bus.Publish(new YourMessage { Text = "Hi" });
 
             Console.WriteLine("Press any key to exit");
             Console.ReadKey();

@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransit.Publisher", "MassTransit.Publisher\MassTransit.Publisher.csproj", "{9C827418-F867-41B4-B6BE-9FB33B4A1CE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MassTransit.Publisher", "MassTransit.Publisher\MassTransit.Publisher.csproj", "{9C827418-F867-41B4-B6BE-9FB33B4A1CE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransit.Consumer", "..\MassTransit.Consumer\MassTransit.Consumer.csproj", "{EA79682E-8684-408D-A206-5EFB35DF38C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MassTransit.Messages", "MassTransit.Messages\MassTransit.Messages.csproj", "{97E1A1F4-5F82-4780-86EE-BF4E430608D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransit.Messages", "MassTransit.Messages\MassTransit.Messages.csproj", "{97E1A1F4-5F82-4780-86EE-BF4E430608D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MassTransit.Consumer", "MassTransit.Consumer\MassTransit.Consumer.csproj", "{07997370-7D13-474D-9A04-47DDEC25A988}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{9C827418-F867-41B4-B6BE-9FB33B4A1CE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C827418-F867-41B4-B6BE-9FB33B4A1CE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C827418-F867-41B4-B6BE-9FB33B4A1CE9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EA79682E-8684-408D-A206-5EFB35DF38C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EA79682E-8684-408D-A206-5EFB35DF38C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EA79682E-8684-408D-A206-5EFB35DF38C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EA79682E-8684-408D-A206-5EFB35DF38C4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{97E1A1F4-5F82-4780-86EE-BF4E430608D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{97E1A1F4-5F82-4780-86EE-BF4E430608D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97E1A1F4-5F82-4780-86EE-BF4E430608D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97E1A1F4-5F82-4780-86EE-BF4E430608D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07997370-7D13-474D-9A04-47DDEC25A988}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07997370-7D13-474D-9A04-47DDEC25A988}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07997370-7D13-474D-9A04-47DDEC25A988}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07997370-7D13-474D-9A04-47DDEC25A988}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
