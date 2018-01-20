@@ -22,11 +22,11 @@ namespace MassTransit.Publisher
                     h.Password("guest");
                 });
 
-                sbc.ReceiveEndpoint(host, "analysis_state", e =>
-                {
-                    e.PrefetchCount = 8;
-                    e.StateMachineSaga(machine, repository);
-                }); ;
+                //sbc.ReceiveEndpoint(host, "analysis_state", e =>
+                //{
+                //    e.PrefetchCount = 8;
+                //    e.StateMachineSaga(machine, repository);
+                //}); ;
 
             });
 

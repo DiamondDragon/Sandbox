@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using MassTransit.Messages;
 
 //using MassTransit.Messages;
@@ -19,10 +20,9 @@ namespace MassTransit.Consumer
 
                 sbc.ReceiveEndpoint(host, "test_queue", ep =>
                 {
-                    ep.Handler<YourMessage>(context =>
-                    {
-                        return Console.Out.WriteLineAsync($"Received: {context.Message.Text}");
-                    });
+                    ep.Consumer<YourMessageConsumer>();
+
+                    ep.Handler<YourMessage>(context => Console.Out.WriteLineAsync($"Received: {context.Message.Text}"));
                 });
             });
 
@@ -32,6 +32,19 @@ namespace MassTransit.Consumer
             Console.ReadKey();
 
             bus.Stop();
+        }
+    }
+
+    public class YourMessageConsumer : IConsumer<YourMessage>
+    {
+        public async Task Consume(ConsumeContext<YourMessage> context)
+        {
+            if (context == null)
+                throw new ArgumentNullException(nameof(context));
+
+            var retryCount = context.GetRetryAttempt();
+
+            await Console.Out.WriteLineAsync("Consumer: " + context.Message.Text);
         }
     }
 }
