@@ -15,8 +15,11 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
+            var organization = "diamond-dragon";
+
             var personalAccessToken = "wvlwkkk2fveptkxmtcz55wo3v5zxbcrj6bryr7sd3fybpuotubla";
-            var repositoryUrl = "https://diamond-dragon.visualstudio.com";
+            //var repositoryUrl = $"https://{organization}.visualstudio.com";
+            var repositoryUrl = $"https://dev.azure.com/{organization}";
 
             GetRepositories2(repositoryUrl, personalAccessToken).Wait();
             Clone(personalAccessToken, "https://diamond-dragon.visualstudio.com/_git/StoryLine");
@@ -51,7 +54,7 @@ namespace ConsoleApp
                         }
 
 
-                        using (var response = await client.GetAsync(repositoryUrl + "/240a742c-61ac-4d24-b9a3-56ca791f8070/_apis/git/repositories?api-version=4.1-preview"))
+                        using (var response = await client.GetAsync(repositoryUrl + "/0c54ceac-18bc-4353-98ef-582eb436028f/_apis/git/repositories?api-version=4.1-preview"))
                         {
                             response.EnsureSuccessStatusCode();
                             string responseBody = await response.Content.ReadAsStringAsync();

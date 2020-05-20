@@ -1,0 +1,30 @@
+version: "3.5"
+services:
+  pgadmin:
+    image: dpage/pgadmin4
+    ports: 
+      - target: 80
+        published: 5200
+        protocol: tcp
+        mode: host
+    environment:
+      POSTGRES_USER: user@domain.com
+      POSTGRES_PASSWORD: SuperSecret
+
+  rie-rdms:
+    image: postgres:11.7
+    ports:
+      - target: 5432
+        published: 5432
+        protocol: tcp
+        mode: host
+    environment:
+      POSTGRES_USER: pgAdminUser
+      POSTGRES_PASSWORD: s0m3_Th1ng
+    volumes:
+      - type: volume
+        source: rie-postgres-data
+        target: /var/lib/postgresql/data
+
+volumes:
+  rie-postgres-data:
