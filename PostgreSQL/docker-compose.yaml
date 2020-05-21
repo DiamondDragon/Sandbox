@@ -8,10 +8,14 @@ services:
         protocol: tcp
         mode: host
     environment:
-      POSTGRES_USER: user@domain.com
-      POSTGRES_PASSWORD: SuperSecret
+      PGADMIN_DEFAULT_EMAIL: user@domain.com
+      PGADMIN_DEFAULT_PASSWORD: SuperSecret
+    volumes:
+      - type: volume
+        source: pgadmin-data
+        target: /var/lib/pgadmin  
 
-  rie-rdms:
+  db:
     image: postgres:11.7
     ports:
       - target: 5432
@@ -23,8 +27,9 @@ services:
       POSTGRES_PASSWORD: s0m3_Th1ng
     volumes:
       - type: volume
-        source: rie-postgres-data
+        source: postgres-data
         target: /var/lib/postgresql/data
 
 volumes:
-  rie-postgres-data:
+  postgres-data:
+  pgadmin-data:
