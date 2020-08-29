@@ -4,7 +4,7 @@ services:
     image: dpage/pgadmin4
     ports: 
       - target: 80
-        published: 5200
+        published: 5300
         protocol: tcp
         mode: host
     environment:
